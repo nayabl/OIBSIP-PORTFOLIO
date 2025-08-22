@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shaik Nayab Rasool — Portfolio</title>
+  <meta name="description" content="Personal portfolio showcasing projects, skills, resume, and contact information." />
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card: #121826;
+      --muted: #9aa4b2;
+      --text: #e6e9ef;
+      --accent: #6ea8fe;
+      --accent-2: #7ee787;
+      --border: #2a3344;
+      --maxw: 1100px;
+      --radius: 18px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; border-radius: var(--radius); }
+    .container { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; }
+    .section { padding: 72px 0; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+    header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 10; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .nav a { margin-left: 18px; color: var(--text); }
+    .hero { text-align: center; padding: 60px 0; }
+    .hero img { width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 3px solid var(--border); margin-bottom: 20px; }
+    .btn { display: inline-block; margin: 6px; padding: .7rem 1rem; border-radius: 999px; border: none; background: var(--accent); color: #000; font-weight: 600; }
+    .skills, .projects { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    footer { border-top: 1px solid var(--border); color: var(--muted); padding: 24px 0; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Shaik Nayab Rasool</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=300&q=80" alt="Portrait of Shaik Nayab Rasool" />
+      <h1>Hi, I'm <span style="color:var(--accent-2)">Shaik Nayab Rasool</span></h1>
+      <p>Aspiring App Developer with a strong foundation in front-end and back-end mobile development. Passionate about building responsive, user-centric applications and solving real-world problems through clean and scalable code.</p>
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="card">
+        <p>B.Tech in Artificial Intelligence & Data Science (2022-2026), Dhanalakshmi Srinivasan University, Trichy. I have hands-on experience in mobile development with Flutter, Android Studio, Firebase, and a strong foundation in Python and databases.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div class="card">Dart, Java, Kotlin, Python</div>
+        <div class="card">Flutter, Android Studio, Firebase</div>
+        <div class="card">HTML, CSS, JavaScript (Basic)</div>
+        <div class="card">Firebase Firestore, SQLite</div>
+        <div class="card">VS Code, Git, Figma</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Sportivo – Your Online Sports Equipment Store</h3>
+          <p>Built a Flutter app for booking sports venues and joining tournaments. Integrated real-time booking, Firebase login, and map functionality.</p>
+        </div>
+        <div class="card">
+          <h3>College Companion App</h3>
+          <p>Built an Android app to manage college schedules, notifications, and study resources for students. Integrated Google Calendar API, push notifications, and SQLite database for storage.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <p>You can download my resume here:</p>
+      <a class="btn" href="SHAIK_NAYAB_RASOOL.pdf" download>Download Resume (PDF)</a>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temperature Converter</title>
+  <meta name="description" content="Convert temperatures between Celsius, Fahrenheit, and Kelvin with validation." />
+  <style>
+    :root{
+      --bg:#0b0f17;--panel:#121826;--text:#e6e9ef;--muted:#9aa4b2;--accent:#6ea8fe;--border:#2a3344;--radius:16px;--maxw:720px
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--text);}
+    .wrap{width:min(100% - 2rem,var(--maxw));margin:48px auto}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:0 6px 30px rgba(0,0,0,.2)}
+    h1{margin:0 0 8px;font-size:clamp(1.4rem,2vw + 1rem,2rem)}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    label{font-weight:600}
+    input,select,button{width:100%;padding:.8rem .9rem;border-radius:12px;border:1px solid var(--border);background:#0c1220;color:var(--text)}
+    .grid{display:grid;gap:12px;grid-template-columns:1fr}
+    .row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    button{background:linear-gradient(180deg,var(--accent),#4477ee);color:#001029;border:none;font-weight:700;cursor:pointer}
+    button:disabled{opacity:.6;cursor:not-allowed}
+    .help{color:var(--muted);font-size:.9rem}
+    .result{margin-top:16px;padding:14px;border:1px dashed var(--border);border-radius:12px;min-height:48px;display:flex;align-items:center}
+    .error{color:#ff9aa2}
+    footer{margin-top:18px;color:var(--muted);font-size:.9rem;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="form" aria-labelledby="title">
+      <h1 id="title">Temperature Converter</h1>
+      <p class="lead">Type a value, choose the units, then click <strong>Convert</strong>. Supports °C, °F, and K.</p>
+
+      <div class="grid">
+        <div>
+          <label for="tempInput">Temperature</label>
+          <input id="tempInput" type="number" step="any" placeholder="e.g. 32" autocomplete="off" />
+          <div class="help">Accepts negative and decimal values. We'll validate it's a number.</div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="fromUnit">From</label>
+            <select id="fromUnit">
+              <option value="C">Celsius (°C)</option>
+              <option value="F">Fahrenheit (°F)</option>
+              <option value="K">Kelvin (K)</option>
+            </select>
+          </div>
+          <div>
+            <label for="toUnit">To</label>
+            <select id="toUnit">
+              <option value="F">Fahrenheit (°F)</option>
+              <option value="C">Celsius (°C)</option>
+              <option value="K">Kelvin (K)</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="convertBtn" type="button">Convert</button>
+        <div id="result" class="result" aria-live="polite">Result will appear here.</div>
+      </div>
+
+      <footer>
+        Try examples: 0 °C → °F (32 °F), 32 °F → °C (0 °C), 300 K → °C (26.85 °C)
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    const input = document.getElementById('tempInput');
+    const from = document.getElementById('fromUnit');
+    const to = document.getElementById('toUnit');
+    const resultBox = document.getElementById('result');
+    const btn = document.getElementById('convertBtn');
+
+    function clampPhysicalLimits(val, unit){
+      // Optional physical plausibility checks (absolute zero):
+      const limits = { C: -273.15, F: -459.67, K: 0 };
+      return val >= limits[unit];
+    }
+
+    function fmt(n){
+      // Format to up to 2 decimals, drop trailing zeros
+      const s = Number(n).toFixed(2);
+      return s.replace(/\.00$/, '').replace(/(\.\d)0$/, '$1');
+    }
+
+    function convertValue(value, fromU, toU){
+      if (fromU === toU) return value; // no-op
+      let c; // pivot through Celsius
+      switch(fromU){
+        case 'C': c = value; break;
+        case 'F': c = (value - 32) * 5/9; break;
+        case 'K': c = value - 273.15; break;
+      }
+      switch(toU){
+        case 'C': return c;
+        case 'F': return c * 9/5 + 32;
+        case 'K': return c + 273.15;
+      }
+    }
+
+    function unitSymbol(u){
+      return u === 'C' ? '°C' : u === 'F' ? '°F' : 'K';
+    }
+
+    function convert(){
+      const raw = input.value.trim();
+      const fromU = from.value;
+      const toU = to.value;
+
+      // Validate number
+      if(raw === '' || !isFinite(raw)){
+        showError('Please enter a valid number.');
+        return;
+      }
+      const value = parseFloat(raw);
+      if (Number.isNaN(value)){
+        showError('Please enter a valid number.');
+        return;
+      }
+
+      // Physical limits (optional)
+      if(!clampPhysicalLimits(value, fromU)){
+        showError(`The entered value is below absolute zero for ${unitSymbol(fromU)}.`);
+        return;
+      }
+
+      const out = convertValue(value, fromU, toU);
+      const text = `${fmt(value)} ${unitSymbol(fromU)} → ${fmt(out)} ${unitSymbol(toU)}`;
+      resultBox.classList.remove('error');
+      resultBox.textContent = text;
+    }
+
+    function showError(msg){
+      resultBox.textContent = msg;
+      resultBox.classList.add('error');
+    }
+
+    btn.addEventListener('click', convert);
+
+    // Press Enter to convert
+    input.addEventListener('keydown', (e)=>{
+      if(e.key === 'Enter') convert();
+    });
+
+    // Prevent selecting same from/to by auto-switching target
+    from.addEventListener('change', ()=>{
+      if(from.value === to.value){
+        // pick a different unit automatically
+        const options = ['C','F','K'].filter(u=>u!==from.value);
+        to.value = options[0];
+      }
+    });
+  </script>
+</body>
+</html>
+      <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:nayabrasool1310@gmail.com">nayabrasool1310@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+918639913203">+91 8639913203</a></p>
+        <p><strong>Location:</strong> Ongole, Andhra Pradesh</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nayabrasool-shaik-600138360" target="_blank">linkedin.com/in/nayabrasool</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/nayabl" target="_blank">github.com/nayabl</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Shaik Nayab Rasool · Built with HTML & CSS</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
